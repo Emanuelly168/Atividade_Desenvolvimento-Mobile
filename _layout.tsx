@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { Ionicons } from '@expo/vector-icons'; // Referência [cite: 20]
+import { Ionicons } from '@expo/vector-icons'; 
 
 export default function Layout() {
   return (
