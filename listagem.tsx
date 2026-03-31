@@ -1,0 +1,53 @@
+import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import { Entypo } from '@expo/vector-icons'; // Referência de ícones
+
+export default function Listagem() {
+  const cards = ["Card 1", "Card 3", "Card 3"];
+
+  return (
+    <ScrollView style={styles.container}>
+      {/* Cabeçalho com ícone geométrico conforme o template */}
+      <View style={styles.header}>
+        <Entypo name="triangle" size={40} color="#ccc" />
+        <Text style={styles.headerText}>Ícones</Text>
+      </View>
+
+      {/* Mapeamento dos Cards Personalizados */}
+      {cards.map((title, index) => (
+        <View key={index} style={styles.card}>
+          <Text style={styles.cardText}>{title}</Text>
+        </View>
+      ))}
+    </ScrollView>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: { 
+    flex: 1, 
+    padding: 20, 
+    backgroundColor: '#fff' 
+  },
+  header: { 
+    flexDirection: 'row', 
+    alignItems: 'center', 
+    marginBottom: 30, 
+    marginTop: 40 
+  },
+  headerText: { 
+    fontSize: 24, 
+    marginLeft: 15,
+    fontWeight: 'bold'
+  },
+  card: { 
+    backgroundColor: '#ddd', // Cor cinza do rascunho
+    padding: 25, 
+    borderRadius: 5, 
+    alignItems: 'center', 
+    marginBottom: 15 
+  },
+  cardText: { 
+    fontSize: 18 
+  },
+});
+});
