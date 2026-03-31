@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { Ionicons } from '@expo/vector-icons'; 
+import { Ionicons } from '@expo/vector-icons';
 
 export default function Layout() {
   return (
@@ -9,11 +9,11 @@ export default function Layout() {
         options={{ tabBarIcon: ({ color }) => <Ionicons name="square-outline" size={28} color={color} /> }} 
       />
       <Tabs.Screen 
-        name="favorites" 
+        name="listagem" 
         options={{ tabBarIcon: ({ color }) => <Ionicons name="star-outline" size={28} color={color} /> }} 
       />
       <Tabs.Screen 
-        name="profile" 
+        name="formulario" 
         options={{ tabBarIcon: ({ color }) => <Ionicons name="circle-outline" size={28} color={color} /> }} 
       />
     </Tabs>
