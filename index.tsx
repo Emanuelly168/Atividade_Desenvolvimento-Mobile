@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      {/* Representação do ícone do gato do template */}
+      {}
       <Ionicons name="happy-outline" size={100} color="black" />
     </View>
   );
