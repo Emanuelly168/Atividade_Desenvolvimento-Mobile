@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   header: { flexDirection: 'row', alignItems: 'center', marginBottom: 30, marginTop: 40 },
   headerText: { fontSize: 24, marginLeft: 15 },
   card: {
-    backgroundColor: '#ddd', // [cite: 19]
+    backgroundColor: '#ddd',
     padding: 25,
     borderRadius: 5,
     alignItems: 'center',
