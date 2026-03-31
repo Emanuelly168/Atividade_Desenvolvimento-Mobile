@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     height: 50,
     justifyContent: 'center',
     paddingHorizontal: 15,
-    width: '80%', // [cite: 16]
+    width: '80%', 
   },
   input: { fontSize: 18 },
 });
